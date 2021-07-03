@@ -1,0 +1,51 @@
+//- index.pug
+doctype html
+html
+  head
+    style
+      include ../static/style.css
+  body
+    nav#navbar
+        ul  
+            div#logo 
+                img(src="/static/dance logo1.png")
+                |     EDA         
+            li #[a(href='/') Home]
+            li #[a(href='/') About]
+            li #[a(href='/') Services]
+            li #[a(href='/') Contact Us]
+            li #[a(href='/') Class Info]
+  
+    section#introSection
+        div.top1 Welcome to Elo Dance Class
+        div.top2 Eat Sleep Dance Repeat
+    section#missionSection
+        div.top3 Our Missions
+        div.card 
+              h3 Dance with beauty
+              div#logo1 
+                img(src="/static/dance logo2.png")
+              p This is one of the best Dance Academy's in World
+        div.card 
+              h3 Dance with perfection
+              div#logo2 
+                img(src="/static/dance logo3.jpg")
+              p This is one of the best Dance Academy's in World
+        div.card 
+              h3 Dance with Heart
+              div#logo3 
+                img(src="/static/dance logo4.png")
+              p This is one of the best Dance Academy's in World
+    section#sponsorSection
+        div.top3 Our Sponsor
+        div#sponsors 
+            img(src="/static/applelogo.png", alt="Sponsor Image", class="spimage")
+            img(src="/static/googlelogo.png", alt="Sponsor Image", class="spimage")
+            img(src="/static/microsofts-logo.jpg", alt="Sponsor Image", class="spimage")
+            img(src="/static/teslalogo.png", alt="Sponsor Image", class="spimage")
+    footer#footer
+        | Copyright © 2021 EloDanceAcademy.com |  All rights reserved
+        
+
+    script
+      include ../static/index.js
